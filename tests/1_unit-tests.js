@@ -5,8 +5,16 @@ suite('Unit Tests', function () {
   suite('Basic Assertions', function () {
     // #1
     test('#isNull, #isNotNull', function () {
+<<<<<<< Updated upstream
       assert.isNull();
       assert.isNotNull();
+=======
+      assert.isNull(
+        null,
+         'this is an optional error description - e.g. null is null'
+         );
+      assert.isNotNull(1, '1 is not null');
+>>>>>>> Stashed changes
     });
     // #2
     test('#isDefined, #isUndefined', function () {
